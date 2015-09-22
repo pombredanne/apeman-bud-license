@@ -1,0 +1,25 @@
+/**
+ * Bud files for types.
+ */
+
+"use strict";
+
+var expandglob = require('expandglob'),
+    stringcase = require('stringcase'),
+    path = require('path');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    get data() {
+        var data = {};
+        expandglob.sync('asset/*.hbs', {
+            cwd: __dirname + '/..'
+        }).forEach(function (filename) {
+            var key = stringcase.camelcase(path.basename(filename, '.hbs'));
+            data[key] = filename;
+        });
+        return data;
+
+    }
+};

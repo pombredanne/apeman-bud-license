@@ -1,6 +1,6 @@
 {
   "name": "apeman-bud-license",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "apeman bud for LICENSE files.",
   "main": "lib",
   "scripts": {

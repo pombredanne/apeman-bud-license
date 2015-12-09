@@ -19,7 +19,7 @@ it('Setup', (done) => {
     assert.ok(bud.tmpl);
     bud.mkdirp = true;
     bud.path = __dirname + '/../tmp/foo/bar/baz.txt';
-    coz.render(bud, function (err) {
+    coz.render(bud, (err) => {
         assert.ifError(err);
         done();
     });

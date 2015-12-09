@@ -4,7 +4,7 @@
 
 "use strict";
 
-var expandglob = require('expandglob'),
+const expandglob = require('expandglob'),
     stringcase = require('stringcase'),
     path = require('path');
 
@@ -12,11 +12,11 @@ module.exports = {
     force: true,
     mode: '444',
     get data() {
-        var data = {};
+        let data = {};
         expandglob.sync('asset/*.hbs', {
             cwd: __dirname + '/..'
-        }).forEach(function (filename) {
-            var key = stringcase.camelcase(path.basename(filename, '.hbs'));
+        }).forEach((filename) => {
+            let key = stringcase.camelcase(path.basename(filename, '.hbs'));
             data[key] = filename;
         });
         return data;

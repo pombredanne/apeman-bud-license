@@ -1,31 +1,28 @@
 /**
  * Test case for setup.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var setup = require('../lib/setup.js'),
+const setup = require('../lib/setup.js'),
+    assert = require('assert'),
     coz = require('coz');
 
-exports.setUp = function (done) {
-    done();
-};
+describe('setup', ()=>{
 
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Setup'] = function (test) {
-    var bud = setup({
+it('Setup', (done) => {
+    let bud = setup({
         type: 'MIT',
         holder:'foo'
     });
-    test.ok(bud);
-    test.ok(bud.tmpl);
+    assert.ok(bud);
+    assert.ok(bud.tmpl);
     bud.mkdirp = true;
     bud.path = __dirname + '/../tmp/foo/bar/baz.txt';
     coz.render(bud, function (err) {
-        test.ifError(err);
-        test.done();
+        assert.ifError(err);
+        done();
     });
-};
+});
+});
 

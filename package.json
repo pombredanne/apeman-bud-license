@@ -1,6 +1,6 @@
 {
   "name": "apeman-bud-license",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "apeman bud for LICENSE files.",
   "main": "lib",
   "scripts": {
@@ -9,7 +9,8 @@
   "repository": "apeman-bud-labo/apeman-bud-license",
   "keywords": [
     "apeman",
-    "bud"
+    "bud",
+    "license"
   ],
   "author": {
     "name": "okunishinishi",
@@ -22,20 +23,19 @@
   },
   "homepage": "https://github.com/apeman-bud-labo/apeman-bud-license#readme",
   "dependencies": {
-    "argx": "^1.3.0",
-    "async": "^1.4.2",
-    "stringcase": "^1.2.5"
+    "argx": "^1.3.1",
+    "async": "^1.5.0",
+    "stringcase": "^1.2.8"
   },
   "devDependencies": {
-    "ape-covering": "^1.0.8",
-    "ape-releasing": "^1.0.16",
-    "ape-reporting": "^1.0.9",
-    "ape-tasking": "^1.0.7",
-    "ape-testing": "^1.3.2",
-    "ape-tmpl": "^1.3.5",
-    "ape-updating": "^1.1.0",
-    "coz": "^3.1.2",
-    "coz-tmpl": "^1.1.0",
+    "ape-covering": "^2.0.0",
+    "ape-releasing": "^2.0.0",
+    "ape-reporting": "^2.0.3",
+    "ape-tasking": "^2.0.0",
+    "ape-testing": "^2.0.0",
+    "ape-tmpl": "^2.0.5",
+    "ape-updating": "^2.0.0",
+    "coz": "^3.1.6",
     "expandglob": "^1.0.1",
     "injectmock": "^1.1.3",
     "sharegit": "^1.0.0"

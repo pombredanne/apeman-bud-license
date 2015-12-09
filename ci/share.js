@@ -12,7 +12,7 @@ var apeTasking = require('ape-tasking'),
     sharegit = require('sharegit');
 
 apeTasking.runTasks('share', [
-    function (callback) {
+    (callback) => {
         sharegit(callback);
     }
 ], true);

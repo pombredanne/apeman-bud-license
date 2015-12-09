@@ -3,7 +3,7 @@
  */
 "use strict";
 
-var apemanBudLicense = require('apeman-bud-license');
+const apemanBudLicense = require('apeman-bud-license');
 
 module.exports = apemanBudLicense({
     type: 'MIT'
